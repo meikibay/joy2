@@ -18,13 +18,13 @@ $(document).ready(function(){
 		$b = $( "#boneco" );
 		position = $b.position();
 		newpleft = position.top +10;
-		$b.css('left', newpleft + 'px');
+		$b.css('top', newpleft + 'px');
 	})
 
 	$('#bt4').click(function(){
 		$b = $( "#boneco" );
 		position = $b.position();
 		newpleft = position.top -10;
-		$b.css('left', newpleft + 'px');
+		$b.css('top', newpleft + 'px');
 	})
 });

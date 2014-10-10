@@ -20,7 +20,19 @@
 	float: right;
 }
 
+#bt2{
+	background-color:red;
+	width:100px;
+	height: 100px;
+	float: left;
+}
 
+#bt3{
+	background-color:red;
+	width:100px;
+	height: 100px;
+	float: left;
+}
 
 .areadejogo{
 	width: 90%;

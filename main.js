@@ -1,9 +1,10 @@
 $(document).ready(function(){
+speed=50;
 
 	$('#bt2').click(function(){
 		$b = $( "#boneco" );
 		position = $b.position();
-		newpleft = position.left +30;
+		newpleft = position.left +speed;
 		if (newpleft > 950) {
 			newpleft = 950
 		}
@@ -13,7 +14,7 @@ $(document).ready(function(){
 	$('#bt1').click(function(){
 		$b = $( "#boneco" );
 		position = $b.position();
-		newpleft = position.left -30;
+		newpleft = position.left -speed;
 		if (newpleft < 40) {
 			newpleft = 40
 		}
@@ -23,7 +24,7 @@ $(document).ready(function(){
 	$('#bt3').click(function(){
 		$b = $( "#boneco" );
 		position = $b.position();
-		newpleft = position.top +30;
+		newpleft = position.top +speed;
 		if (newpleft > 300) {
 			newpleft = 300
 		}
@@ -33,7 +34,7 @@ $(document).ready(function(){
 	$('#bt4').click(function(){
 		$b = $( "#boneco" );
 		position = $b.position();
-		newpleft = position.top -30;
+		newpleft = position.top -speed;
 		if (newpleft < 0) {
 			newpleft = 0
 		}

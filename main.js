@@ -1,7 +1,9 @@
 $(document).ready(function(){
-speed=50;
+speed=parseInt($('#txtspeed').val());
+console.log(speed);
 
 	$('#bt2').click(function(){
+		speed=parseInt($('#txtspeed').val());
 		$b = $( "#boneco" );
 		position = $b.position();
 		newpleft = position.left +speed;
@@ -12,6 +14,7 @@ speed=50;
 	})
 
 	$('#bt1').click(function(){
+		speed=parseInt($('#txtspeed').val());
 		$b = $( "#boneco" );
 		position = $b.position();
 		newpleft = position.left -speed;
@@ -22,6 +25,7 @@ speed=50;
 	})
 
 	$('#bt3').click(function(){
+		speed=parseInt($('#txtspeed').val());
 		$b = $( "#boneco" );
 		position = $b.position();
 		newpleft = position.top +speed;
@@ -32,6 +36,7 @@ speed=50;
 	})
 
 	$('#bt4').click(function(){
+		speed=parseInt($('#txtspeed').val());
 		$b = $( "#boneco" );
 		position = $b.position();
 		newpleft = position.top -speed;

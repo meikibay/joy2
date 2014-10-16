@@ -7,11 +7,11 @@ console.log(speed);
 		$b = $( "#boneco" );
 		position = $b.position();
 		newpleft = position.left +speed;
-		if (newpleft > 950) {
-			newpleft = 950
+		if (newpleft < 500) {
+			$b.animate({"left": "+=" + speed + "px"}, "slow");
 		}
 		//$b.css('left', newpleft + 'px');
-		$b.animate({"left": "+=" + speed + "px"}, "slow");
+		//$b.animate({"left": "+=" + speed + "px"}, "slow");
 	})
 
 	$('#bt1').click(function(){
@@ -19,11 +19,11 @@ console.log(speed);
 		$b = $( "#boneco" );
 		position = $b.position();
 		newpleft = position.left -speed;
-		if (newpleft < 40) {
-			newpleft = 40
+		if (newpleft > 40) {
+			$b.animate({"left": "-=" + speed + "px"}, "slow");
 		}
 		//$b.css('left', newpleft + 'px');
-		$b.animate({"left": "-=" + speed + "px"}, "slow");
+		//$b.animate({"left": "-=" + speed + "px"}, "slow");
 	})
 
 	$('#bt3').click(function(){
@@ -31,11 +31,11 @@ console.log(speed);
 		$b = $( "#boneco" );
 		position = $b.position();
 		newpleft = position.top +speed;
-		if (newpleft > 300) {
-			newpleft = 300
+		if (newpleft < 150) {
+			$b.animate({"top": "+=" + speed + "px"}, "slow");
 		}
 		//$b.css('top', newpleft + 'px');
-		$b.animate({"top": "+=" + speed + "px"}, "slow");
+		//$b.animate({"top": "+=" + speed + "px"}, "slow");
 	})
 
 	$('#bt4').click(function(){
@@ -43,10 +43,10 @@ console.log(speed);
 		$b = $( "#boneco" );
 		position = $b.position();
 		newpleft = position.top -speed;
-		if (newpleft < 0) {
-			newpleft = 0
+		if (newpleft < 2) {
+			$b.animate({"top": "-=" + speed + "px"}, "slow");
 		}
 		//$b.css('top', newpleft + 'px');
-		$b.animate({"top": "-=" + speed + "px"}, "slow");
+		//$b.animate({"top": "-=" + speed + "px"}, "slow");
 	})
 });

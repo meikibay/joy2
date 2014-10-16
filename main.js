@@ -10,7 +10,8 @@ console.log(speed);
 		if (newpleft > 950) {
 			newpleft = 950
 		}
-		$b.css('left', newpleft + 'px');
+		//$b.css('left', newpleft + 'px');
+		$b.animate({"left": "+=" + speed + "px"}, "slow");
 	})
 
 	$('#bt1').click(function(){

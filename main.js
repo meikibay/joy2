@@ -25,6 +25,7 @@ console.log(speed);
 		}
 		//$b.css('left', newpleft + 'px');
 		//$b.animate({"left": "-=" + speed + "px"}, "slow");
+		$( "#coordenadas" ).text(position.left + " " + position.top);
 	})
 
 	$('#bt3').click(function(){
@@ -37,6 +38,7 @@ console.log(speed);
 		}
 		//$b.css('top', newpleft + 'px');
 		//$b.animate({"top": "+=" + speed + "px"}, "slow");
+		$( "#coordenadas" ).text(position.left + " " + position.top);
 	})
 
 	$('#bt4').click(function(){
@@ -49,5 +51,6 @@ console.log(speed);
 		}
 		//$b.css('top', newpleft + 'px');
 		//$b.animate({"top": "-=" + speed + "px"}, "slow");
+		$( "#coordenadas" ).text(position.left + " " + position.top);
 	})
 });

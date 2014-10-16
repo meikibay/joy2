@@ -1,10 +1,10 @@
 $(document).ready(function(){
 speed=parseInt($('#txtspeed').val());
 console.log(speed);
+$b = $( "#boneco" );
 
 	$('#bt2').click(function(){
 		speed=parseInt($('#txtspeed').val());
-		$b = $( "#boneco" );
 		position = $b.position();
 		newpleft = position.left +speed;
 		if (newpleft < 500) {
@@ -17,7 +17,6 @@ console.log(speed);
 
 	$('#bt1').click(function(){
 		speed=parseInt($('#txtspeed').val());
-		$b = $( "#boneco" );
 		position = $b.position();
 		newpleft = position.left -speed;
 		if (newpleft > 40) {
@@ -30,7 +29,6 @@ console.log(speed);
 
 	$('#bt3').click(function(){
 		speed=parseInt($('#txtspeed').val());
-		$b = $( "#boneco" );
 		position = $b.position();
 		newpleft = position.top +speed;
 		if (newpleft < 150) {
@@ -43,7 +41,6 @@ console.log(speed);
 
 	$('#bt4').click(function(){
 		speed=parseInt($('#txtspeed').val());
-		$b = $( "#boneco" );
 		position = $b.position();
 		newpleft = position.top -speed;
 		if (newpleft > 5) {

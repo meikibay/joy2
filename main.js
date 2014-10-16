@@ -3,28 +3,33 @@ speed=parseInt($('#txtspeed').val());
 console.log(speed);
 $b = $( "#boneco" );
 
-	$('#bt2').click(function(){
+	function moveRight(){
 		speed=parseInt($('#txtspeed').val());
 		position = $b.position();
 		newpleft = position.left +speed;
 		if (newpleft < 500) {
 			$b.animate({"left": "+=" + speed + "px"}, "slow");
 		}
-		//$b.css('left', newpleft + 'px');
-		//$b.animate({"left": "+=" + speed + "px"}, "slow");
 		$( "#coordenadas" ).text(position.left + " " + position.top);
-	})
-
-	$('#bt1').click(function(){
+	}
+	
+	function moveLeft(){
 		speed=parseInt($('#txtspeed').val());
 		position = $b.position();
 		newpleft = position.left -speed;
 		if (newpleft > 40) {
 			$b.animate({"left": "-=" + speed + "px"}, "slow");
 		}
-		//$b.css('left', newpleft + 'px');
-		//$b.animate({"left": "-=" + speed + "px"}, "slow");
 		$( "#coordenadas" ).text(position.left + " " + position.top);
+
+	}
+
+	$('#bt2').click(function(){
+		moveRight();
+	})
+
+	$('#bt1').click(function(){
+		moveLeft();
 	})
 
 	$('#bt3').click(function(){

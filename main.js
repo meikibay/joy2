@@ -61,4 +61,28 @@ $b = $( "#boneco" );
 	$('#bt4').click(function(){
 		moveUp();
 	})
+
+	document.onkeydown = checkKey;
+
+	function checkKey (e) {
+
+		e = e || window.event;
+
+		if (e.keyCode == '39') {
+			moveRight()
+		}
+		else if (e.keyCode == '40') {
+			moveDown()
+			//down arrow
+		}
+		else if (e.keyCode == '37'){
+			moveLeft()
+			//left arrow
+		}
+		else if (e.keyCode == '38'){
+			moveUp()
+			//up arrow
+		}
+	}
+
 });

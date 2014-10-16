@@ -12,6 +12,7 @@ console.log(speed);
 		}
 		//$b.css('left', newpleft + 'px');
 		//$b.animate({"left": "+=" + speed + "px"}, "slow");
+		$( "#coordenadas" ).text(position.left + " " + position.top);
 	})
 
 	$('#bt1').click(function(){
@@ -43,7 +44,7 @@ console.log(speed);
 		$b = $( "#boneco" );
 		position = $b.position();
 		newpleft = position.top -speed;
-		if (newpleft < 2) {
+		if (newpleft > 5) {
 			$b.animate({"top": "-=" + speed + "px"}, "slow");
 		}
 		//$b.css('top', newpleft + 'px');
